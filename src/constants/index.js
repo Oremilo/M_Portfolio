@@ -83,79 +83,98 @@ const blogPosts = [
     image: "/images/blog1.png",
     link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
   },
-  {
-    id: 2,
-    date: "Aug 28, 2025",
-    title: "The Ultimate Guide to Mastering Three.js for 3D Development",
-    image: "/images/blog2.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
-  },
-  {
-    id: 3,
-    date: "Aug 15, 2025",
-    title: "The Ultimate Guide to Mastering GSAP Animations",
-    image: "/images/blog3.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
-  },
 ];
 
 const techStack = [
   {
+    category: "Languages",
+    items: ["Python", "JS", "Java", "SQL"], // :contentReference[oaicite:1]{index=1}
+  },
+  {
     category: "Frontend",
-    items: ["React.js", "Next.js", "TypeScript"],
-  },
-  {
-    category: "Mobile",
-    items: ["React Native", "Expo"],
-  },
-  {
-    category: "Styling",
-    items: ["Tailwind CSS", "Sass", "CSS"],
+    items: ["React", "Figma", "Tailwind", "CSS"], // :contentReference[oaicite:2]{index=2}
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express", "NestJS", "Hono"],
+    items: ["Node.js", "Express", "REST APIs"], // :contentReference[oaicite:3]{index=3}
+  },
+  {
+    category: "ML",
+    items: ["NumPy", "Pandas", "PyTorch", "TensorFlow"], // :contentReference[oaicite:4]{index=4}
   },
   {
     category: "Database",
-    items: ["MongoDB", "PostgreSQL"],
+    items: ["MongoDB", "MySQL", "PostgreSQL"], // :contentReference[oaicite:5]{index=5}
   },
   {
-    category: "Dev Tools",
-    items: ["Git", "GitHub", "Docker"],
+    category: "Cloud & DevOps",
+    items: ["AWS", "Docker", "Linux", "Git"], // :contentReference[oaicite:6]{index=6}
   },
+
 ];
 
+
+// const socials = [
+//   {
+//     id: 1,
+//     text: "Github",
+//     icon: "/icons/github.svg",
+//     bg: "#f4656b",
+//     link: "https://github.com/Oremilo",
+//   },
+//   {
+//     id: 2,
+//     text: "Medium",
+//     icon: "/icons/medium.svg",
+//     bg: "#4bcb63",
+//     link: "https://jsmastery.com/",
+//   },
+//   {
+//     id: 3,
+//     text: "Gmail",
+//     icon: "/icons/gmail.svg",
+//     bg: "#ff866b",
+//     link: "mailto:himanshu05112003@gmail.com",
+//   },
+//   {
+//     id: 4,
+//     text: "LinkedIn",
+//     icon: "/icons/linkedin.svg",
+//     bg: "#05b6f6",
+//     link: "https://www.linkedin.com/in/oremilo/",
+//   },
+// ];
 const socials = [
   {
     id: 1,
     text: "Github",
     icon: "/icons/github.svg",
-    bg: "#f4656b",
-    link: "https://github.com/JavaScript-Mastery-Pro",
+    bg: "linear-gradient(135deg, #C9BAE8, #BBA6E1)", // lavender plush fade
+    link: "https://github.com/Oremilo",
   },
   {
     id: 2,
-    text: "Platform",
-    icon: "/icons/atom.svg",
-    bg: "#4bcb63",
+    text: "Medium",
+    icon: "/icons/medium.svg",
+    bg: "linear-gradient(135deg, #E7A2C6, #BBA6E1)", // pink->lavender like the heart
     link: "https://jsmastery.com/",
   },
   {
     id: 3,
-    text: "Twitter/X",
-    icon: "/icons/twitter.svg",
-    bg: "#ff866b",
-    link: "https://x.com/jsmasterypro",
+    text: "Gmail",
+    icon: "/icons/gmail.svg",
+    bg: "linear-gradient(135deg, #EEBB83, #E7A2C6)", // peach->soft pink (nose + heart)
+    link: "mailto:himanshu05112003@gmail.com",
   },
   {
     id: 4,
     text: "LinkedIn",
     icon: "/icons/linkedin.svg",
-    bg: "#05b6f6",
-    link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
+    bg: "linear-gradient(135deg, #D8C9ED, #C9BAE8)", // background fade tones
+    link: "https://www.linkedin.com/in/oremilo/",
   },
 ];
+
 
 const photosLinks = [
   {
@@ -225,7 +244,7 @@ const WORK_LOCATION = {
     // ▶ Project 1
     {
       id: 5,
-      name: "Nike Ecommerce Website Application",
+      name: "AI-Based Stock Trading for Indian Markets",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5", // icon position inside Finder
@@ -233,30 +252,30 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Nike Project.txt",
+          name: "Stock Trading Project.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
-            "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
-            "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
-            "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+            "This AI-driven trading platform is built to help you analyze and trade Indian stocks with confidence and precision.",
+            "It goes beyond basic charts by offering ML-powered price predictions, sentiment scores, and risk insights in real time.",
+            "Think of it as your personal market expert—tracking trends, analyzing news, and guiding every buy/sell decision.",
+            "With sleek dashboards and smart chatbot explanations, trading feels clearer, faster, and much more informed.",
           ],
         },
         {
           id: 2,
-          name: "nike.com",
+          name: "stock.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
+          href: "https://github.com/Oremilo/Stock-Analysis",
           position: "top-10 right-20",
         },
         {
           id: 4,
-          name: "nike.png",
+          name: "stock.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
@@ -278,7 +297,7 @@ const WORK_LOCATION = {
     // ▶ Project 2
     {
       id: 6,
-      name: "AI Resume Analyzer",
+      name: "TravelSphere",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-52 right-80",
@@ -286,35 +305,36 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "AI Resume Analyzer Project.txt",
+          name: "TravelSphere.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 right-10",
           description: [
-            "AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.",
-            "Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.",
-            "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.",
-            "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device.",
+            "TravelSphere is your intelligent travel companion that makes trip planning smoother and more exciting.",
+            "Instead of browsing endless websites, it gives you AI-powered itineraries, landmark suggestions, and live weather updates instantly.",
+            "Think of it like having a personal travel expert who knows every destination, best routes, and perfect days to explore.",
+            "With social features and a modern tech stack, it helps you plan, connect, and share unforgettable travel moments with ease.",
           ],
+
         },
         {
           id: 2,
-          name: "ai-resume-analyzer.com",
+          name: "TravelSphere.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
+          href: "https://github.com/Oremilo/Travel_Sphere",
           position: "top-20 left-20",
         },
         {
           id: 4,
-          name: "ai-resume-analyzer.png",
+          name: "TravelSphere.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
           position: "top-52 left-80",
-          imageUrl: "/images/project-2.png",
+          imageUrl: "/images/project-2.jpg",
         },
         {
           id: 5,
@@ -331,7 +351,7 @@ const WORK_LOCATION = {
     // ▶ Project 3
     {
       id: 7,
-      name: "Food Delivery App",
+      name: "My Portfolio",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-80",
@@ -339,21 +359,20 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Food Delivery App Project.txt",
+          name: "My Portfolio.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.",
-            "Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.",
-            "Think of it like having your favorite restaurants in your pocket—ready to deliver anytime, anywhere.",
-            "It’s built with React Native, so it works smoothly on both iOS and Android with a clean, modern design.",
+            " This is mac os style portfolio website built with React and Tailwind CSS.",
+            "Experimented with different UI/UX design patterns using regex and gsap.",
+            "It’s built with React and Tailwind CSS, so it works smoothly on pac and tablet except mobile with a clean, modern design.",
           ],
         },
         {
           id: 2,
-          name: "food-delivery-app.com",
+          name: "My Portfolio.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
@@ -362,7 +381,7 @@ const WORK_LOCATION = {
         },
         {
           id: 4,
-          name: "food-delivery-app.png",
+          name: "My Portfolio.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
@@ -371,7 +390,7 @@ const WORK_LOCATION = {
         },
         {
           id: 5,
-          name: "Design.fig",
+          name: "My Portfolio.fig",
           icon: "/images/plain.png",
           kind: "file",
           fileType: "fig",
@@ -397,25 +416,25 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-10 left-5",
-      imageUrl: "/images/adrian.jpg",
+      imageUrl: "/images/me.jpeg",
     },
     {
       id: 2,
-      name: "casual-me.png",
+      name: "bdc.jpeg",
       icon: "/images/image.png",
       kind: "file",
       fileType: "img",
       position: "top-28 right-72",
-      imageUrl: "/images/adrian-2.jpg",
+      imageUrl: "/images/bdc.jpeg",
     },
     {
       id: 3,
-      name: "conference-me.png",
+      name: "casual-me.png",
       icon: "/images/image.png",
       kind: "file",
       fileType: "img",
       position: "top-52 left-80",
-      imageUrl: "/images/adrian-3.jpeg",
+      imageUrl: "/images/hangout.jpg",
     },
     {
       id: 4,
@@ -425,12 +444,12 @@ const ABOUT_LOCATION = {
       fileType: "txt",
       position: "top-60 left-5",
       subtitle: "Meet the Developer Behind the Code",
-      image: "/images/adrian.jpg",
+      image: "/images/me2.jpeg",
       description: [
-        "Hey! I’m Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
-        "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
-        "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
-        "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
+        "Hi, I’m Himanshu — building AI-powered products that don’t just look smart, but feel smart for the user.",
+        "Skilled in full-stack development and ML systems, I enjoy designing user workflows that make complex tech effortless.",
+        "I dive deep into research, metrics, and iteration — because performance isn’t just backend speed, it’s how the user experiences the product.",
+        "When I’m not shipping features, I’m exploring new gadgets, debugging life decisions, or pretending coffee counts as a meal 😄",
       ],
     },
   ],

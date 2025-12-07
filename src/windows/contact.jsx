@@ -11,7 +11,7 @@ const Contact = () => {
             </div>
             <div className="p-5 space-y-5">
                 <img
-                    src="/images/adrian.jpg"
+                    src="/images/me2.jpeg"
                     alt="adrian"
                     className="w-24 h-24 rounded-full"
                 />
@@ -19,7 +19,7 @@ const Contact = () => {
                 <p>Got and idea? Or Just wanna talk?</p>
                 <ul>
                     {socials.map(({ id, bg, link, icon, text }) => (
-                        <li key={id} style={{ backgroundColor: bg }}>
+                        <li key={id} style={{ background: bg }}>
                             <a
                                 href={link}
                                 target="_blank"

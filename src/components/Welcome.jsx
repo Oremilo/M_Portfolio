@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 const FONT_WEIGHTS = {
-    subtitle: { min: 100, max: 400, default: 100 },
+    subtitle: { min: 100, max: 400, default: 280 },
     title: { min: 100, max: 900, default: 400 },
 };
 
@@ -76,6 +76,30 @@ const setupTextHover = (container, type) => {
     };
 };
 
+// const Welcome = () => {
+//     const titleRef = useRef(null);
+//     const subtitleRef = useRef(null);
+//     useGSAP(() => {
+//         const cleanupTitle = setupTextHover(titleRef.current, 'title');
+//         const cleanupSubtitle = setupTextHover(subtitleRef.current, 'subtitle');
+//         return () => {
+//             if (cleanupTitle) cleanupTitle();
+//             if (cleanupSubtitle) cleanupSubtitle();
+//         };
+//     }, []);
+
+//     return <section id="welcome">
+//         <p ref={subtitleRef}>
+//             {renderText("Hey , I'm Himanshu! Welcome to my", 'text-3xl font-georama', 100)}</p>
+//         <h1 ref={titleRef} className="mt-7">
+//             {renderText("portfolio", "text-9xl italic font-georama")}
+//         </h1>
+//         <div className="small-screen">
+//             <p>This Portfolio is designed for desktop?tabled screens Only</p>
+//         </div>
+//     </section>
+
+// };
 const Welcome = () => {
     const titleRef = useRef(null);
     const subtitleRef = useRef(null);
@@ -88,16 +112,28 @@ const Welcome = () => {
         };
     }, []);
 
-    return <section id="welcome">
-        <p ref={subtitleRef}>
-            {renderText("Hey , I'm Himanshu! Welcome to my", 'text-3xl font-georama', 100)}</p>
-        <h1 ref={titleRef} className="mt-7">
-            {renderText("portfolio", "text-9xl italic font-georama")}
-        </h1>
-        <div className="small-screen">
-            <p>This Portfolio is designed for desktop?tabled screens Only</p>
-        </div>
-    </section>
+    return (
+        <section id="welcome">
+            <p ref={subtitleRef}>
+                {renderText(
+                    "Hey, I'm Himanshu! Welcome to my",
+                    "text-4xl italic font-georama font-extrabold text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.45)] tracking-wide",
+                    280
+                )}
+            </p>
 
+            <h1 ref={titleRef} className="mt-10 leading-none">
+                {renderText(
+                    "portfolio",
+                    "text-9xl italic font-georama font-bold text-white drop-shadow-[0_5px_10px_rgba(0,0,0,0.5)] tracking-tight"
+                )}
+            </h1>
+
+            <div className="small-screen">
+                <p>This Portfolio is designed for desktop/tablet screens Only</p>
+            </div>
+        </section>
+    );
 };
+
 export default Welcome;
