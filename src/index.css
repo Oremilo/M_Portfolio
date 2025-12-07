@@ -119,13 +119,13 @@ body {
   }
 
   #safari {
-    @apply w-4xl absolute top-40 left-2/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
+    @apply w-4xl absolute top-40 left-2/12 bg-white shadow-xl rounded-xl overflow-hidden;
 
     .search {
-      @apply flex items-center gap-3 w-2/3 bg-white border border-gray-300 rounded-lg px-3 py-2;
+      @apply flex items-center gap-3 w-2/3 bg-white border border-violet-200 rounded-lg px-3 py-2;
 
       input {
-        @apply placeholder:text-gray-400;
+        @apply placeholder:text-violet-400;
       }
     }
 
@@ -133,7 +133,8 @@ body {
       @apply bg-white p-10 max-w-3xl mx-auto;
 
       h2 {
-        @apply text-xl font-bold text-pink-600 mb-10;
+        /* soft lavender heading, elegant */
+        @apply text-xl font-bold text-violet-400 mb-10;
       }
 
       .blog-post {
@@ -147,20 +148,26 @@ body {
           @apply col-span-10 space-y-3;
 
           p {
-            @apply text-xs text-gray-500;
+            /* subtle lavender-grey meta text */
+            @apply text-xs text-violet-400;
           }
 
           h3 {
-            @apply font-semibold text-base text-gray-800;
+            /* deeper, readable purple for titles */
+            @apply font-semibold text-base text-violet-900;
           }
 
           a {
-            @apply text-blue-600 text-xs hover:underline flex items-center gap-3;
+            /* lavender links, minimalist accent */
+            @apply text-violet-400 text-xs hover:underline flex items-center gap-3;
           }
         }
       }
     }
   }
+
+
+
 
   #terminal {
     @apply w-xl absolute top-32 left-1/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
